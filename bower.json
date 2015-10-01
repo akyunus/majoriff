@@ -1,0 +1,33 @@
+{
+  "name": "majoriff",
+  "version": "0.0.0",
+  "description": "A component pack for riot with materializecss",
+  "main": "js/majoriff.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "devDependencies": {
+    "riot": "~2.2.4",
+	"materialize": "~0.97.0",
+	"jquery": ">=2.1.1",
+	"font-awesome":"~4.4.0"
+  },
+  "keywords": [
+    "materializecss",
+    "riot",
+    "component"
+  ],
+  "authors": [
+    "Yunus Ak <yunus@ak.gen.tr>"
+  ],
+  "license": "MIT",
+  "homepage": "yunus.ak.gen.tr/majoriff",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

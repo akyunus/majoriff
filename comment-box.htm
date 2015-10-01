@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link type="text/css" rel="stylesheet" href="bower_components/materialize/bin/materialize.css"  media="screen,projection"/>
+</head>
+<body>
+<nav class="light-blue lighten-1" role="navigation">
+<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Majoriff Component Pack</a>
+</div>
+</nav>
+	<div class="container">
+	<div class="section">
+	<h5>Comment Box component, paginated comment view contains a text input</h5>
+	</div>
+	
+	<comment-box></comment-box>
+	</div>
+	<!-- Dependencies -->
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/materialize/bin/materialize.js"></script>
+	<script type="text/javascript" src="bower_components/riot/riot+compiler.min.js"></script>
+	
+	<!-- Components -->
+	<script type="riot/tag" src="majoriff_components/comment-box.js"></script>
+	<script>
+	$(document).ready(function(){
+
+		var path = location.href.replace(/\/[^\/]+$/,"/");
+		path = path + "sample_data/tabs.txt";
+		
+		riot.mount('comment-box', {url : path});
+		
+		
+	});
+	</script>
+	
+</body>
+</html>
